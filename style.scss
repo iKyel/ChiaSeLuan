@@ -1,0 +1,259 @@
+// // Color
+// $primary-color: #e74c3c;
+// $top-color: #f4f4f4;
+// $second-color: #eeeeee; 
+// $newest-color: #0066aa; 
+// $white-color: #ffffff;
+// $black-color: #333333;
+// $grey-text-color: #999999;
+// $grey-num-color: #cccccc;
+// $footer-color: #444444;
+
+
+// // Font
+// $roboto-thin: 'Libre Baskerville', serif;
+// $roboto-regular: 'Merriweather', serif;
+// $roboto-bold: 'Roboto', sans-serif;
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+li,
+span {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style-type: none;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.wrapper {
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+.container {
+    max-width: 1170px;
+    margin: 0 auto; // nằm giữa
+}
+
+.header {
+    background-color: #f4f4f4;
+
+    &_inner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-top: 9px;
+        padding-bottom: 9px;
+    }
+
+    &_left-icon {
+        a {
+            padding-left: 24px;
+        }
+
+        &-def {
+            color: #999999;
+        }
+
+        &-gmail {
+            color: #e74c3c;
+        }
+    }
+
+    &_menu {
+        &-list {
+            display: flex;
+
+            &-item {
+                margin-left: 24px;
+
+                &-link {
+                    color: #333333;
+                }
+            }
+        }
+    }
+}
+
+.ads {
+    &_inner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+}
+
+.navbar {
+    background-color: #e74c3c;
+    height: 42px;
+    width: 100%;
+
+    &_menu-list {
+        display: flex;
+
+        &-item {
+            list-style: none;
+            line-height: 42px;
+            font-size: 16px;
+            position: relative;
+
+            a {
+                color: #fff;
+                padding: 0 15px 0 15px;
+                display: block;
+                /* trỏ chuột sẽ click được rộng hơn*/
+            }
+
+            &:hover {
+                background-color: #999999;
+
+                a {
+                    cursor: pointer;
+                    color: #fff;
+                }
+
+                & .navbar_menu-list-item-subItem {
+                    display: block;
+                }
+            }
+
+            &-subItem {
+                display: none;
+                width: 100%;
+                background-color: #999999;
+                position: absolute;
+                z-index: 99;
+                left: 0;
+                top: 42px;
+
+                li {
+                    width: 100%;
+
+                    a {
+                        color: #333;
+                    }
+
+                    &:hover {
+                        background-color: blue;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.banner {
+    background: url(./images/banner.png) no-repeat center center;
+    width: 100%;
+    min-height: 250px;
+    margin-top: -25px;
+
+    &_inner {
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+
+        & .title {
+            color: #fff;
+            text-align: center;
+            font-weight: 600;
+            font-size: 46px;
+            text-transform: uppercase;
+            line-height: 250px; // căn giữa
+        }
+
+        & .menu {
+            display: flex;
+            width: 100%;
+            background-color: #f4f4f4;
+            height: 50px;
+
+            & li {
+                margin-left: 24px;
+
+                & a {
+                    color: #333333;
+                    line-height: 50px;
+
+                    & span {
+                        margin-left: 10px;
+                        margin-right: 10px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.main {
+    &_content {
+        width: 100%;
+        min-height: 2052px;
+
+        & .content-left {
+            margin-top: 30px;
+            width: 840px;
+            background-color: #fff;
+
+            &_main {
+                width: 800px;
+
+                & .news {
+                    & h2 {
+                        width: 100%;
+                        color: #333333;
+                    }
+
+                    & .infor {
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;   
+                        margin-top: 10px;
+                        &-left {
+                            a {
+                                margin-right: 15px;
+                            }
+                            & .icon {
+                                color: #e74c3c;
+                            }
+                            & span {
+                                color: #999999;
+                                padding-left: 5px;
+                            }
+                        } 
+                        &-right {
+                            color: #999999;
+                            display: flex;
+                            & span {
+                                padding-left: 15px;
+                                padding-right: 15px;
+                            }
+                            & .icon {
+                                padding-left: 25px;
+                            }
+                            & a {
+                                color: #999999;
+                            }
+                        }                   
+                    }
+                }
+
+            }
+        }
+    }
+}
