@@ -11,6 +11,10 @@ span {
   padding: 0;
 }
 
+p {
+  color: black;
+}
+
 a {
   text-decoration: none;
 }
@@ -21,6 +25,20 @@ li {
 
 body {
   font-family: "Roboto", sans-serif;
+  font-size: 14px;
+}
+
+h4 {
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+
+.gray-content {
+  color: #b4b4b4;
+}
+
+.primary-color {
+  color: #e74c3c;
 }
 
 .wrapper {
@@ -168,39 +186,171 @@ body {
 .main_content .content-left_main {
   width: 800px;
 }
-.main_content .content-left_main .news h2 {
+.main_content .content-left_main .hot-new {
+  padding-bottom: 12px;
+}
+.main_content .content-left_main .hot-new h2 {
   width: 100%;
   color: #333333;
+  font-weight: bold;
+  font-size: 28px;
 }
-.main_content .content-left_main .news .infor {
+.main_content .content-left_main .hot-new .infor {
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin-top: 10px;
 }
-.main_content .content-left_main .news .infor-left a {
+.main_content .content-left_main .hot-new .infor-left a {
   margin-right: 15px;
 }
-.main_content .content-left_main .news .infor-left .icon {
+.main_content .content-left_main .hot-new .infor-left .icon {
   color: #e74c3c;
 }
-.main_content .content-left_main .news .infor-left span {
+.main_content .content-left_main .hot-new .infor-left span {
   color: #999999;
   padding-left: 5px;
 }
-.main_content .content-left_main .news .infor-right {
+.main_content .content-left_main .hot-new .infor-right {
   color: #999999;
   display: flex;
 }
-.main_content .content-left_main .news .infor-right span {
+.main_content .content-left_main .hot-new .infor-right span {
   padding-left: 15px;
   padding-right: 15px;
 }
-.main_content .content-left_main .news .infor-right .icon {
+.main_content .content-left_main .hot-new .infor-right .icon {
   padding-left: 25px;
 }
-.main_content .content-left_main .news .infor-right a {
+.main_content .content-left_main .hot-new .infor-right a {
   color: #999999;
+}
+.main_content .content-left_main .hot-new .infor-right .VN {
+  color: #333;
+}
+.main_content .content-left_main .hot-new .content ul {
+  display: flex;
+}
+.main_content .content-left_main .hot-new .content ul li {
+  padding-left: 11px;
+}
+.main_content .content-left_main .hot-new .content .text {
+  margin-top: 12px;
+  padding-bottom: 12px;
+}
+.main_content .content-left_main .hot-new .content .btn-xemthem {
+  text-align: center;
+}
+.main_content .content-left_main .hot-new .content .btn-xemthem a {
+  display: inline-block;
+}
+.main_content .content-left_main .hot-new .content .btn-xemthem a button {
+  border: none;
+  background-color: #eeeeee;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 14px;
+}
+.main_content .content-left_main .hot-new .content .end {
+  padding-top: 12px;
+}
+.main_content .content-left_main .hot-new .content .end .share {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between; /* Phân chia không gian giữa các phần tử con */
+}
+.main_content .content-left_main .hot-new .content .end .share .block-left {
+  display: flex;
+  align-items: center; /* Căn giữa theo chiều dọc */
+}
+.main_content .content-left_main .hot-new .content .end .share .block-left p {
+  font-weight: bold;
+}
+.main_content .content-left_main .hot-new .content .end .share .block-left a {
+  padding-left: 5px;
+  padding-right: 5px;
+  font-size: 27px;
+}
+.main_content .content-left_main .hot-new .content .end .share .block-left .fa-facebook {
+  color: rgb(59, 90, 154);
+}
+.main_content .content-left_main .hot-new .content .end .share .block-left .fa-twitter {
+  color: rgb(41, 169, 225);
+}
+.main_content .content-left_main .hot-new .content .end .share .block-left .fa-google {
+  color: rgb(223, 75, 56);
+}
+.main_content .content-left_main .hot-new .content .end .share .block-right {
+  width: 40px;
+  height: 40px;
+  border: 2px solid #b4b4b4; /* Viền ngoài 2px, màu đen (#333) */
+  display: flex;
+  justify-content: center; /* Căn giữa theo chiều ngang */
+  align-items: center; /* Căn giữa theo chiều dọc */
+}
+.main_content .content-left_main .hot-new .content .end .share .block-right a {
+  max-width: 100%;
+  font-size: 20px;
+}
+.main_content .content-left_main .hot-new .content .end .tag {
+  display: flex;
+}
+.main_content .content-left_main .hot-new .content .end .tag .inner {
+  margin-right: 8px;
+  background-color: rgb(238, 238, 238);
+  padding: 7px;
+}
+.main_content .content-left_main .hot-new .content .end .tag .inner a {
+  font-size: 12px;
+}
+.main_content .content-left_main .hot-new .content .end .tag .inner a p {
+  color: rgb(153, 153, 153);
+}
+.main_content .content-left_main .news {
+  min-height: 1424px;
+}
+.main_content .content-left_main .news .content {
+  margin-top: 12px;
+}
+.main_content .content-left_main .news .content .y-kien .elem {
+  padding: 10px;
+}
+.main_content .content-left_main .news .content .y-kien .title {
+  background-color: rgb(238, 238, 238);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.main_content .content-left_main .news .content .y-kien .title .right {
+  display: flex;
+}
+.main_content .content-left_main .news .content .y-kien .title .right .element {
+  margin-left: 5px;
+}
+.main_content .content-left_main .news .content .y-kien .title .right .link {
+  color: rgb(0, 102, 170);
+}
+.main_content .content-left_main .news .content .y-kien .neu-y-kien {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  border: 2px solid #b4b4b4;
+  min-height: 100px;
+}
+.main_content .content-left_main .news .content .y-kien .tra-loi {
+  text-align: right; /* Căn phải nội dung */
+}
+.main_content .content-left_main .news .content .y-kien .tra-loi a button {
+  border: none;
+  background-color: #e74c3c;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.main_content .content-left_main .news .content .y-kien .tra-loi a button p {
+  color: #eeeeee;
 }
 
 /*# sourceMappingURL=style.css.map */

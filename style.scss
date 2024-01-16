@@ -26,6 +26,10 @@ span {
     padding: 0;
 }
 
+p {
+    color: black;
+}
+
 a {
     text-decoration: none;
 }
@@ -36,6 +40,21 @@ li {
 
 body {
     font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+}
+
+h4 {
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
+.gray-content {
+    color: #b4b4b4;
+}
+
+
+.primary-color {
+    color: #e74c3c;
 }
 
 .wrapper {
@@ -213,10 +232,13 @@ body {
             &_main {
                 width: 800px;
 
-                & .news {
+                & .hot-new {
+                    padding-bottom: 12px;
                     & h2 {
                         width: 100%;
                         color: #333333;
+                        font-weight: bold;
+                        font-size: 28px;
                     }
 
                     & .infor {
@@ -249,8 +271,148 @@ body {
                             & a {
                                 color: #999999;
                             }
+                            & .VN {
+                                color: #333;
+                            }
                         }                   
                     }
+
+                    & .content {
+                        ul {
+                            display: flex;
+                            li {
+                                padding-left: 11px;
+                            }
+                        }
+                        & .text {
+                            margin-top: 12px;
+                            padding-bottom: 12px;
+                        }
+                        & .btn-xemthem {                          
+                            text-align: center;
+                            & a {
+                                display: inline-block;
+                                
+                                & button {
+                                    border: none;
+                                    background-color: #eeeeee;
+                                    padding-left: 30px;
+                                    padding-right: 30px;
+                                    padding-top: 10px;
+                                    padding-bottom: 10px;
+                                    font-size: 14px;
+                                }
+                            }
+                        }
+                        & .end {
+                            padding-top: 12px;
+                            & .share {
+                                margin-bottom: 20px;
+                                display: flex;
+                                justify-content: space-between; /* Phân chia không gian giữa các phần tử con */                               
+                                & .block-left {
+                                    display: flex;
+                                    align-items: center; /* Căn giữa theo chiều dọc */
+                                    & p {
+                                        font-weight: bold;
+                                    }
+                                    & a {
+                                        padding-left: 5px;
+                                        padding-right: 5px;
+                                        font-size: 27px;
+                                    }
+                                    & .fa-facebook {
+                                        color: rgb(59, 90, 154);
+                                    }
+                                    & .fa-twitter {
+                                        color: rgb(41, 169, 225);
+                                    }
+                                    & .fa-google {
+                                        color: rgb(223, 75, 56);
+                                    }
+                                }
+                                & .block-right {
+                                    width: 40px;
+                                    height: 40px;
+                                    border: 2px solid #b4b4b4; /* Viền ngoài 2px, màu đen (#333) */
+                                    display: flex;   
+                                    justify-content: center; /* Căn giữa theo chiều ngang */
+                                    align-items: center; /* Căn giữa theo chiều dọc */                           
+                                    & a {
+                                        max-width: 100%;
+                                        font-size: 20px;                                        
+                                    }
+                                }
+                            }
+                            & .tag {
+                                display: flex;                               
+                                & .inner {
+                                    margin-right: 8px;
+                                    background-color: rgb(238, 238, 238);
+                                    padding: 7px;
+                                    & a {
+                                        font-size: 12px;  
+                                        & p {
+                                            color: rgb(153, 153, 153);  
+                                        }                                     
+                                                                             
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                & .news {
+                    min-height: 1424px;
+                    & .content {
+                        margin-top: 12px;
+                        & .y-kien {
+                            & .elem {
+                                padding: 10px;
+                            }
+                            & .title {
+                                
+                                background-color: rgb(238, 238, 238);
+                                display: flex;
+                                justify-content: space-between;
+                                align-items: center;
+                                & .right {
+                                    display: flex;
+                                    & .element {
+                                        margin-left: 5px;                                       
+                                    }
+                                    & .link {
+                                        color: rgb(0, 102, 170);
+                                    }
+                                }
+                            }
+                            
+                            & .neu-y-kien {
+                                margin-top: 20px;
+                                margin-bottom: 10px;
+                                border: 2px solid #b4b4b4;                           
+                                min-height: 100px;                               
+                            }
+                            & .tra-loi {
+                                text-align: right; /* Căn phải nội dung */
+                                & a {
+                                    & button {
+                                        border: none;
+                                        background-color: #e74c3c;
+                                        padding-left: 30px;
+                                        padding-right: 30px;
+                                        padding-top: 15px;
+                                        padding-bottom: 15px;
+                                        & p {
+                                            color: #eeeeee;
+                                        }
+                                    }
+                                }
+                            }
+                            
+                        }
+                    }
+                    
                 }
 
             }
