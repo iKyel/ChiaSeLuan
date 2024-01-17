@@ -32,6 +32,7 @@ p {
 
 a {
     text-decoration: none;
+    color: #333;
 }
 
 li {
@@ -226,7 +227,7 @@ h4 {
 
         & .content-left {
             margin-top: 30px;
-            width: 840px;
+            width: 800px;
             background-color: #fff;
 
             &_main {
@@ -234,6 +235,7 @@ h4 {
 
                 & .hot-new {
                     padding-bottom: 12px;
+
                     & h2 {
                         width: 100%;
                         color: #333333;
@@ -244,55 +246,67 @@ h4 {
                     & .infor {
                         display: flex;
                         align-items: center;
-                        justify-content: space-between;   
+                        justify-content: space-between;
                         margin-top: 10px;
+
                         &-left {
                             a {
                                 margin-right: 15px;
                             }
+
                             & .icon {
                                 color: #e74c3c;
                             }
+
                             & span {
                                 color: #999999;
                                 padding-left: 5px;
                             }
-                        } 
+                        }
+
                         &-right {
                             color: #999999;
                             display: flex;
+
                             & span {
                                 padding-left: 15px;
                                 padding-right: 15px;
                             }
+
                             & .icon {
                                 padding-left: 25px;
                             }
+
                             & a {
                                 color: #999999;
                             }
+
                             & .VN {
                                 color: #333;
                             }
-                        }                   
+                        }
                     }
 
                     & .content {
                         ul {
                             display: flex;
+
                             li {
                                 padding-left: 11px;
                             }
                         }
+
                         & .text {
                             margin-top: 12px;
                             padding-bottom: 12px;
                         }
-                        & .btn-xemthem {                          
+
+                        & .btn-xemthem {
                             text-align: center;
+
                             & a {
                                 display: inline-block;
-                                
+
                                 & button {
                                     border: none;
                                     background-color: #eeeeee;
@@ -304,97 +318,126 @@ h4 {
                                 }
                             }
                         }
+
                         & .end {
                             padding-top: 12px;
+
                             & .share {
                                 margin-bottom: 20px;
                                 display: flex;
-                                justify-content: space-between; /* Phân chia không gian giữa các phần tử con */                               
+                                justify-content: space-between;
+
+                                /* Phân chia không gian giữa các phần tử con */
                                 & .block-left {
                                     display: flex;
-                                    align-items: center; /* Căn giữa theo chiều dọc */
+                                    align-items: center;
+
+                                    /* Căn giữa theo chiều dọc */
                                     & p {
                                         font-weight: bold;
                                     }
+
                                     & a {
                                         padding-left: 5px;
                                         padding-right: 5px;
                                         font-size: 27px;
                                     }
+
                                     & .fa-facebook {
                                         color: rgb(59, 90, 154);
                                     }
+
                                     & .fa-twitter {
                                         color: rgb(41, 169, 225);
                                     }
+
                                     & .fa-google {
                                         color: rgb(223, 75, 56);
                                     }
                                 }
+
                                 & .block-right {
                                     width: 40px;
                                     height: 40px;
-                                    border: 2px solid #b4b4b4; /* Viền ngoài 2px, màu đen (#333) */
-                                    display: flex;   
-                                    justify-content: center; /* Căn giữa theo chiều ngang */
-                                    align-items: center; /* Căn giữa theo chiều dọc */                           
+                                    border: 2px solid #b4b4b4;
+                                    /* Viền ngoài 2px, màu đen (#333) */
+                                    display: flex;
+                                    justify-content: center;
+                                    /* Căn giữa theo chiều ngang */
+                                    align-items: center;
+
+                                    /* Căn giữa theo chiều dọc */
                                     & a {
                                         max-width: 100%;
-                                        font-size: 20px;                                        
+                                        font-size: 20px;
                                     }
                                 }
                             }
+
                             & .tag {
-                                display: flex;                               
+                                display: flex;
+
                                 & .inner {
                                     margin-right: 8px;
                                     background-color: rgb(238, 238, 238);
                                     padding: 7px;
+
                                     & a {
-                                        font-size: 12px;  
+                                        font-size: 12px;
+
                                         & p {
-                                            color: rgb(153, 153, 153);  
-                                        }                                     
-                                                                             
+                                            color: rgb(153, 153, 153);
+                                        }
+
                                     }
                                 }
                             }
                         }
                     }
                 }
+
                 & .news {
                     min-height: 1424px;
+
                     & .content {
                         margin-top: 12px;
+
                         & .y-kien {
                             & .elem {
                                 padding: 10px;
                             }
+
                             & .title {
-                                
+
                                 background-color: rgb(238, 238, 238);
                                 display: flex;
                                 justify-content: space-between;
                                 align-items: center;
+
                                 & .right {
                                     display: flex;
+
                                     & .element {
-                                        margin-left: 5px;                                       
+                                        margin-left: 5px;
                                     }
+
                                     & .link {
                                         color: rgb(0, 102, 170);
                                     }
                                 }
                             }
-                            
+
                             & .neu-y-kien {
                                 margin-top: 20px;
                                 margin-bottom: 10px;
-                                border: 2px solid #b4b4b4;                           
-                                min-height: 100px;                               
+                                border: 2px solid #b4b4b4;
+                                min-height: 100px;
                             }
+
                             & .tra-loi {
-                                text-align: right; /* Căn phải nội dung */
+                                text-align: right;
+
+                                /* Căn phải nội dung */
                                 & a {
                                     & button {
                                         border: none;
@@ -403,16 +446,157 @@ h4 {
                                         padding-right: 30px;
                                         padding-top: 15px;
                                         padding-bottom: 15px;
+
                                         & p {
                                             color: #eeeeee;
                                         }
                                     }
                                 }
                             }
-                            
+
+                        }
+
+                        & .tin-tuc {
+                            padding-top: 50px;
+
+                            & .title {
+                                display: flex;
+                                justify-content: space-between;
+                                // border-bottom: 1px solid #b4b4b4;         
+                                position: relative;
+
+                                & .left {
+                                    & p {
+                                        font-size: 31px;
+                                        position: relative;
+                                        padding-bottom: 10px;
+                                        // &::before {
+                                        //     content: "";
+                                        //     position: absolute;
+                                        //     bottom: 0;
+                                        //     left: 0;
+                                        //     width: 60%;
+                                        //     /* Chỉ chiếm 1 nửa chiều rộng của thẻ p */
+                                        //     height: 3px;
+                                        //     /* Đặt độ dày của border-bottom */
+                                        //     background-color: #e74c3c;
+                                        //     /* Màu sắc của border-bottom */
+                                        //     & a {
+
+                                        //         font-size: 5px;
+                                        //     }
+                                        // }
+                                    }
+                                }
+
+                                & .right {
+                                    display: flex;
+                                    align-items: center;
+
+                                    /* Căn giữa theo chiều dọc */
+                                    & .primary-color {
+                                        font-weight: bold;
+                                    }
+
+                                    & .icon {
+                                        padding-left: 10px;
+                                    }
+
+                                    & .elem {
+                                        padding-left: 20px;
+                                        padding-right: 20px;
+                                    }
+
+                                    & .elem-main {
+                                        border-right: 2px solid #b4b4b4;
+                                    }
+
+                                    & .fa-icon {
+                                        width: 20px;
+                                        height: 20px;
+                                        font-size: 10px;
+                                        color: #e74c3c;
+                                        border: 2px solid #b4b4b4;
+                                        /* Viền ngoài 2px, màu đen (#333) */
+                                        display: flex;
+                                        justify-content: center;
+                                        /* Căn giữa theo chiều ngang */
+                                        align-items: center;
+                                        /* Căn giữa theo chiều dọc */
+                                    }
+                                }
+                            }
+
+                            & .line {
+                                position: relative;
+                                top: 50%;
+                                left: 0;
+                                width: 100%;
+                                height: 3px;
+                                display: block;
+                                /* Hiển thị như một khối */
+
+                                & .red {
+                                    position: absolute;
+                                    top: 0;
+                                    left: 0;
+                                    width: 10%;
+                                    height: 3px;
+                                    /* Độ dày của đoạn màu đỏ */
+                                    background-color: #e74c3c;
+                                    /* Màu sắc của đoạn màu đỏ */
+                                }
+
+                                & .gray {
+                                    position: absolute;
+                                    top: 2px;
+                                    left: 10%;
+                                    width: 90%;
+                                    height: 1px;
+                                    /* Độ dày của phần màu xám */
+                                    background-color: #b4b4b4;
+                                    /* Màu sắc của phần màu xám */
+                                }
+                            }
+
+                            & .noi-dung {
+                                margin-top: 20px;
+                                margin-right: 30px;
+                                & .left {
+                                    max-width: 50%;
+                                    margin-right: 30px;
+                                    & h3 {
+                                        font-size: 24px;
+                                    }
+
+                                    & .left-photo {
+                                        width: 100%;
+                                        & img {
+                                            width: 100%;
+                                            height: auto; /* Để giữ tỷ lệ khung hình của ảnh */
+                                            display: block; /* Để loại bỏ dư thừa khoảng trắng dưới ảnh */
+                                        }
+                                        
+                                    }
+                                    & .title {
+                                        padding-top: 22px;
+                                        padding-bottom: 10px;
+                                    }
+                                    & .date {
+                                        font-size: 13px;
+                                        display: flex;
+                                        & .fa-clock {
+                                            padding-right: 6px;
+                                        }
+                                        
+                                    }
+                                }
+                            }
+
+
                         }
                     }
-                    
+
                 }
 
             }
