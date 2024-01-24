@@ -641,9 +641,10 @@ h4 {
         }
         & .content-right {
             width: 330px;          
-            border-left: 1px solid rgb(221, 221, 221);
+            
             & .main-content-right {
                 padding-left: 40px;
+                border-left: 1px solid rgb(221, 221, 221);
                 & .item {
                     margin-bottom: 20px;
                     & .title {
@@ -769,10 +770,119 @@ h4 {
                         }
                     }
                 }
+                & .van-de-nong {
+                    & .ban-tin {
+                        padding-top: 5px;
+                        & .new {           
+                            display: flex;    
+                            padding-top: 15px;
+                            
+                            align-items: center;
+                            &:not(:last-child){
+                                border-bottom: 1px dashed #ccc;
+                                padding-bottom: 15px;
+                            } 
+                            & .photo {
+                                
+                            }
+                            & .title {
+                                
+                                padding-left: 10px;
+                                & p {
+                                    font-size: 14px;
+                                }
+                            }
+                        }
+                    }
+                }
                 
             }
             
         }
          
+    }
+
+    &_video {
+        min-height: 810px;
+        padding-top: 50px;
+        background-color: rgb(244, 244, 244);
+        & .video {
+            & .title {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                & .left {
+                    & p {
+                        font-size: 31px;
+                    }
+                }
+                & .right {
+                    display: flex;
+                    & .icon {
+                        padding-left: 10px;
+                    }
+                    & .fa-icon {
+                        width: 20px;
+                        height: 20px;
+                        font-size: 10px;
+                        color: #e74c3c;
+                        border: 2px solid #b4b4b4;
+                        /* Viền ngoài 2px, màu đen (#333) */
+                        display: flex;
+                        justify-content: center;
+                        /* Căn giữa theo chiều ngang */
+                        align-items: center;
+                        /* Căn giữa theo chiều dọc */
+                    }
+                }
+                
+            }
+            & .content {
+                display: flex;
+                padding-top: 30px;
+                justify-content: space-between;
+                &_left {
+                    max-width: 870px;
+                    & .photo {
+                        & img {
+                            max-width: 870px;
+                        }
+                    }                
+                    & .text {
+                        
+                        & .title {
+                            margin-top: 10px;
+                            margin-bottom: 6px;
+                            & h3 {
+                                font-size: 24px;
+                            }
+                        }
+                        & .date {
+                            margin-bottom: 16px;
+                        }
+                    }
+                }
+                &_right {
+                    
+                    & .item {
+                        &:not(:last-child){
+                            margin-bottom: 25px;
+                        }   
+                        max-width: 270px;
+                        & .photo {
+                            & img {
+                                max-width: 270px;
+                            }                          
+                        }
+                        & .title {
+                            & .fa-video {
+                                color: #e74c3c;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        
     }
 }
